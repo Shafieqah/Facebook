@@ -10,7 +10,8 @@ namespace FacebookMessenger
         {
             InitializeComponent();
 
-            var navPage = new NavigationPage(new ChatsPage());
+            var navPage = new NavigationPage(new MainPage());
+            
 
             MainPage = navPage;
         }

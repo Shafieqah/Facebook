@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FacebookMessenger.Chats"
-             x:Name="ChatsPage">
+             x:Class="FacebookMessenger.ChatsPage">
     <ContentPage.Content>
         <StackLayout BackgroundColor="Black">
             <Image Source="header.jpg" HeightRequest="300" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
@@ -13,14 +12,14 @@
                 </Grid.RowDefinitions>
             </Grid>
 
-            <ImageButton Source="contact.jpg" Clicked="EnterClicked" HeightRequest="300" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <ImageButton Source="contact.jpg" HeightRequest="150" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
 
-            <Image Source="chatlist" 
-                   HeightRequest="300" 
+            <Image Source="chatlist.jpg" 
+                   HeightRequest="500" 
                    Aspect="Fill" 
                    VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="CenterAndExpand" 
-                   x:Name="Enter" /> 
+                   x:Name="Enter"  /> 
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

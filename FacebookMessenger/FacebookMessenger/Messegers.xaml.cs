@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace FacebookMessenger
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Messegers : ContentPage
     {
-       public MainPage()
+        public Messegers()
         {
             InitializeComponent();
         }
@@ -21,8 +23,7 @@ namespace FacebookMessenger
 
             await Task.Delay(5000);
 
-            await Navigation.PushAsync(new ChatsPage());
+            await Navigation.PushAsync(new Messegers());
         }
     }
-    
 }
